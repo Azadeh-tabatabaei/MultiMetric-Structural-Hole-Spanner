@@ -35,7 +35,7 @@ The repository will contain comprehensive scripts to benchmark the algorithm aga
 
 ---
 
-`` ## ⚙️ Repository Structure (Upcoming)
+`` ## ⚙️ Repository Structure (Upcoming)`` 
 Once public, the repository will be structured as follows:
 ```text
 ├── src/
