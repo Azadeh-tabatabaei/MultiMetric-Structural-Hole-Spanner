@@ -1,48 +1,40 @@
-# K-MultiMetric-Structural-Hole-Spanner (K-MMSHS)
+# k-MMSHS: $k$-Multi-Metric Structural Hole Spanners Optimization Framework
 
-Official repository for the paper: **"K-MultiMetric Structural Hole Spanner Detection in Complex Topologies"**
+This repository will host the official implementation of the **$k$-Multi-Metric Structural Hole Spanners ($k$-MMSHS)** optimization framework, a novel and topology-agnostic approach for strategic network analysis.
 
----
+## 📢 Current Status: Under Review
+The complete source code, algorithmic engines, and benchmarking logs are currently kept **private** as the corresponding manuscript is undergoing the peer-review process. 
 
-## 📢 Current Status: Under Peer Review
-The complete source code, algorithmic engines, and evaluation pipelines are currently **private** while the manuscript undergoes peer review. 
-
-**🔒 Open-Source Release Plan:** The entire Python implementation, configuration scripts, and anonymized replication logs will be made fully public immediately upon the official publication of the paper to ensure complete reproducibility.
+**The entire repository, including reproduction scripts, will be made fully Open-Source immediately upon the official publication of the paper.**
 
 ---
 
-## 🚀 Overview
-Identifying **Structural Hole Spanners (SHS)** is a fundamental challenge in Social Network Analysis (SNA) and Influence Maximization (IM). Traditional methods often evaluate nodes using static, single-metric topological attributes, which fails to capture the multi-dimensional and dynamic nature of modern complex networks.
+## 🚀 Key Contributions & Overview
 
-The **K-MultiMetric Structural Hole Spanner (K-MMSHS)** framework introduces an optimized, robust approach to bridge this gap. By synthesizing structural diversity, bridge-like connectivity, and algorithmic efficiency, K-MMSHS uncovers critical nodes that control information diffusion across distinct communities without incurring prohibitive computational overhead.
+Identifying structural hole spanners (SHS) is essential for optimizing information exchange in social networks, yet it remains computationally challenging as network scale increases. This framework addresses these limitations through:
+
+* **Formal Formulation:** Defines the $k$-MMSHS problem by integrating three distinct structural paradigms: *Effective Size*, *Bridging Coefficient*, and *Betweenness Centrality*.
+* **Metaheuristic Engine:** The first modular optimization framework to apply population-based metaheuristics to this domain, featuring:
+    * **Genetic Algorithm (GA)**
+    * **Particle Swarm Optimization (PSO)**
+    * **Enhanced Grey Wolf Optimizer (GWO)** with dynamic mutation and Chaotic Logistic Maps for robust, ergodic exploration.
+* **Topology-Agnostic Advantage:** Unlike deep learning or graph neural network models, this framework provides high-precision results purely based on network topology **without requiring any training data or overhead**.
+* **Proven Scalability:** Successfully benchmarks against traditional greedy methods, demonstrating stable scalability and high-quality solutions on large-scale real-world and synthetic graphs where traditional methods fail to converge.
+
+---
+
+## 📅 Roadmap & Upcoming Releases
+Upon publication, this repository will be updated with:
+1.  **Core Source Code:** Clean, modular Python implementations of the GA, PSO, and Chaotic GWO engines.
+2.  **Dataset Suite:** Pre-processing scripts for both real-world social networks and synthetic graphs.
+3.  **Evaluation Notebooks:** Ready-to-use scripts for plotting efficiency, convergence curves, and structural hole metrics.
 
 ---
 
-## 🌟 Key Innovations & Features
-* **Multi-Metric Topological Fusion:** Integrates diverse network centralities and structural hole properties to build a comprehensive fitness function for seed selection.
-* **Scalable Combinatorial Optimization:** Designed to bypass the computational bottlenecks of exact greedy algorithms, making it highly applicable to large-scale real-world graphs.
-* **Balanced Efficiency-Accuracy Trade-off:** Achieves superior or competitive influence spread/network resilience while running orders of magnitude faster than traditional baselines.
-* **Temporal & Density Robustness:** Evaluated rigorously across diverse network topologies, validating its sensitivity to edge density and community boundaries.
+<!-- ## 📖 Proposed Citation
+If you are interested in this research or wish to track its release, please reference the upcoming publication:
+
+> **Tabatabaei, et al.** "$k$-Multi-Metric Structural Hole Spanner Detection via Enhanced Population-Based Metaheuristics." *Under Review* (2026).
 
 ---
-
-## 📊 Experimental Evaluation Landscape
-The repository will contain comprehensive scripts to benchmark the algorithm against state-of-the-art baselines (including Greedy approximations, Heuristic centralities, and Evolutionary algorithms) across several standardized datasets from the **SNAP** repository:
-
-1. **High-Velocity Interaction Networks:** (e.g., *CollegeMsg*, *Email-Eu-core-temporal*)
-2. **Dense Citation/Collaboration Topologies:** (e.g., *Cit-HepPh*)
-3. **Micro-Scale Target Environments:** Multi-departmental organizational networks to test localized accuracy boundaries.
-
----
-<!-- 
- ## ⚙️ Repository Structure (Upcoming)
-Once public, the repository will be structured as follows:
-```text
-├── src/
-│   ├── models/          # Core K-MMSHS algorithmic implementation
-│   ├── baselines/       # Reference baselines (Greedy, Centralities, MATI variants)
-│   └── utils/           # Network parsers, temporal decay handlers, and evaluation engines
-├── datasets/            # Data preprocessing scripts and open-source benchmarks
-├── notebooks/           # Interactive Jupyter notebooks for quick validation
-├── requirements.txt     # Python dependencies (NetworkX, Pandas, NumPy, etc.)
-└── main.py              # Execution entry point for running benchmarks `` -->
+*For inquiries regarding collaboration or early access to the preprint for academic verification, please contact the corresponding author via institutional channels.* -->
