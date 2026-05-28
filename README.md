@@ -34,8 +34,8 @@ The repository will contain comprehensive scripts to benchmark the algorithm aga
 3. **Micro-Scale Target Environments:** Multi-departmental organizational networks to test localized accuracy boundaries.
 
 ---
-
-`` ## ⚙️ Repository Structure (Upcoming)`` 
+<!-- 
+ ## ⚙️ Repository Structure (Upcoming)
 Once public, the repository will be structured as follows:
 ```text
 ├── src/
@@ -45,4 +45,4 @@ Once public, the repository will be structured as follows:
 ├── datasets/            # Data preprocessing scripts and open-source benchmarks
 ├── notebooks/           # Interactive Jupyter notebooks for quick validation
 ├── requirements.txt     # Python dependencies (NetworkX, Pandas, NumPy, etc.)
-└── main.py              # Execution entry point for running benchmarks ``
+└── main.py              # Execution entry point for running benchmarks `` -->
